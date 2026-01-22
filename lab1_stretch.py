@@ -1,4 +1,5 @@
 import time
+import numpy as np
 import stretch_body.robot
 robot = stretch_body.robot.Robot()
 robot.startup()
@@ -27,7 +28,10 @@ robot.push_command()
 robot.wait_command()
 
 # Open gripper and close it
-robot.end_of_arm.move_to('stretch_gripper', 50)
+robot.end_of_arm.move_to('stretch_gripper', 100)
+robot.push_command()
+robot.wait_command()
+robot.end_of_arm.move_to('stretch_gripper', -100)
 robot.push_command()
 robot.wait_command()
 
