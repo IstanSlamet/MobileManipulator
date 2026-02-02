@@ -39,4 +39,7 @@ node.move_to_pose({'rotate_mobile_base': np.radians(180)}, blocking=True)
 
  # Move robot base 0.2 meters forward
 node.move_to_pose({'translate_mobile_base': 0.2}, blocking=True)
+<<<<<<< HEAD
 
+=======
+>>>>>>> d20ccf99ad95228023a3afcc2ac127e7bdf3801f
